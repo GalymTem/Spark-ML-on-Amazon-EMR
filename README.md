@@ -4,7 +4,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project demonstrates the implementation of a distributed machine learning pipeline using Apache Spark on Amazon EMR.
 
@@ -14,7 +14,7 @@ Distributed systems allow computational tasks to be parallelized across multiple
 
 ---
 
-## 🎯 Lab Goals
+## Lab Goals
 
 - Build a complete Spark ML pipeline
 - Perform distributed feature engineering
@@ -25,7 +25,7 @@ Distributed systems allow computational tasks to be parallelized across multiple
 
 ---
 
-## ☁️ Amazon EMR Cluster Configuration
+## Amazon EMR Cluster Configuration
 
 The Spark job was executed on an Amazon EMR cluster with the following configuration:
 
@@ -36,27 +36,23 @@ The Spark job was executed on an Amazon EMR cluster with the following configura
   - Hadoop
   - Spark
 - **IAM Roles:** Default EMR roles
+- 
+<img width="900" height="359" alt="image" src="https://github.com/user-attachments/assets/cfbbc4c2-7a13-4fdf-b986-f1adc8102c60" />
 
 The cluster used YARN for distributed resource management.
 
 ---
 
-## 📊 Dataset Information
+## Dataset Information
 
 The **Bank Customer Churn Dataset** was used for this experiment.
 
+<img width="900" height="421" alt="image" src="https://github.com/user-attachments/assets/77e2daeb-33f8-4511-bc3a-21ad6c5792ae" />
+
+
 The dataset includes customer banking attributes used to predict whether a customer will leave the bank.
 
-### Features Used
 
-- CreditScore  
-- Geography  
-- Gender  
-- Age  
-- Tenure  
-- Balance  
-- NumOfProducts  
-- EstimatedSalary  
 
 ### Target Variable
 
@@ -68,11 +64,17 @@ The dataset was uploaded to HDFS to enable distributed access across cluster nod
 
 ---
 
-## 📂 Uploading Data to HDFS
+## Uploading Data to HDFS
 
 The following steps were performed:
+<img width="776" height="129" alt="image" src="https://github.com/user-attachments/assets/0485f685-6e95-47c8-906a-338d73d30d85" />
 
+<img width="704" height="89" alt="image" src="https://github.com/user-attachments/assets/a5b125e4-d924-4fd4-85e3-b51bf13fb431" />
 ```bash
 hdfs dfs -mkdir -p /user/hadoop/churn_input
 hdfs dfs -put Churn_Modelling.csv /user/hadoop/churn_input/
 hdfs dfs -ls /user/hadoop/churn_input
+```
+### Result:
+<img width="167" height="36" alt="image" src="https://github.com/user-attachments/assets/ad477c8a-0e2b-4a2c-8ad8-a69a1fd8d7d0" />
+
