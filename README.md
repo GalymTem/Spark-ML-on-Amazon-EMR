@@ -70,11 +70,7 @@ The following steps were performed:
 <img width="776" height="129" alt="image" src="https://github.com/user-attachments/assets/0485f685-6e95-47c8-906a-338d73d30d85" />
 
 <img width="704" height="89" alt="image" src="https://github.com/user-attachments/assets/a5b125e4-d924-4fd4-85e3-b51bf13fb431" />
-```bash
-hdfs dfs -mkdir -p /user/hadoop/churn_input
-hdfs dfs -put Churn_Modelling.csv /user/hadoop/churn_input/
-hdfs dfs -ls /user/hadoop/churn_input
-```
+
 ### Result:
 <img width="167" height="36" alt="image" src="https://github.com/user-attachments/assets/ad477c8a-0e2b-4a2c-8ad8-a69a1fd8d7d0" />
 
