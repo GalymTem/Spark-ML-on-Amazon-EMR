@@ -1,4 +1,3 @@
-# CustomerChurn_Baseline_Ablation
 # LAB 6 REPORT  
 ## Distributed Machine Learning with Spark ML on Amazon EMR  
 
